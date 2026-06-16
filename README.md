@@ -6,8 +6,7 @@
 **FALSE FLAG** is a browser-based forensic-analyst game. You play an investigator reconstructing a real cyber intrusion against *Northwind Games* (case #NW-0451). Each of the five stages is a genuine security skill, and together they *are* the attack chain — reconstructed in reverse, from the damage back to the attacker. The twist: the crew named in the ransom note is a false flag. The breach was an inside job.
 
 
-**▶ Live demo:** https://github.com/kalilinux-exp/falseflag
-
+**▶ Live demo:** (video will be done)
 
 ---
 
