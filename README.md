@@ -38,8 +38,7 @@ Every clue you recover pins to an **evidence board** with red-string links, and 
 
 ## Run it locally
 
-It's a static site — no install required.
-
+It's a static site, download needed,then run locally
 ```bash
 # Option A: just open the file
 #   open index.html in any modern browser
