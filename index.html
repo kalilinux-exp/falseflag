@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FALSE FLAG - Forensic Reconstruction Unit</title>
+  <meta name="description" content="A forensic analyst game. Reconstruct a real cyber intrusion, level by level - and uncover who is hiding behind a false flag." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Oswald:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=14" />
+</head>
+<body>
+  <!-- CRT atmospherics -->
+  <div class="crt-scanlines" aria-hidden="true"></div>
+  <div class="crt-vignette" aria-hidden="true"></div>
+  <div class="crt-flicker" aria-hidden="true"></div>
+
+  <!-- Persistent top status bar (hidden until game starts) -->
+  <div id="statusbar" class="statusbar hidden">
+    <div class="statusbar__left">
+      <span class="statusbar__brand">FALSE&nbsp;FLAG</span>
+      <span class="statusbar__case">CASE&nbsp;#NW-0451 · NORTHWIND GAMES</span>
+    </div>
+    <div class="statusbar__right">
+      <button id="btn-board" class="sbtn" title="Open evidence board"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M8 8l4 4M16 8l-4 4M12 12v5"/></svg></span> EVIDENCE <span id="evidence-count" class="badge">0</span></button>
+      <button id="btn-reset" class="sbtn sbtn--ghost" title="Reset case (clears all progress)"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5v5h5"/><path d="M19 13a7 7 0 1 1-2-5l3-3"/></svg></span> RESET</button>
+    </div>
+  </div>
+
+  <!-- Desk props in the margins (decorative, wide screens only) -->
+  <div class="deskprops" aria-hidden="true">
+    <span class="dp dp-photo dp-photo--1"></span>
+    <span class="dp dp-photo dp-photo--2"></span>
+    <span class="dp dp-sticky"></span>
+    <span class="dp dp-mug"></span>
+    <span class="dp dp-ring"></span>
+    <span class="dp dp-pen"></span>
+    <span class="dp dp-clip"></span>
+  </div>
+
+  <!-- App mounts here -->
+  <main id="app" aria-live="polite"></main>
+
+  <!-- Evidence board overlay -->
+  <div id="board-overlay" class="overlay hidden" role="dialog" aria-label="Evidence board"></div>
+
+  <!-- Generic modal overlay (briefings, hints, results) -->
+  <div id="modal-overlay" class="overlay hidden" role="dialog"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
