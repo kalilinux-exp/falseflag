@@ -90,3 +90,4 @@ js/
 ## Credits
 
 Built solo by **Kalixte Petrof** for NextGenHacks
+© 2026 Kalixte Petrof
